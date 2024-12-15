@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+  "name": "Page Text Grabber",
+  "version": "1.0",
+  "description": "Grabs page text and sends it to a remote endpoint",
+  "permissions": ["activeTab", "<all_urls>"],
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "browser_action": {
+    "default_title": "Grab Page Text"
+  }
+}
+
