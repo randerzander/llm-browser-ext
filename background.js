@@ -9,7 +9,12 @@ browser.browserAction.onClicked.addListener(function(tab) {
       dialog.style.cssText = 'background:white;padding:20px;border-radius:8px;box-shadow:0 2px 10px rgba(0,0,0,0.1);width:300px;';
       dialog.innerHTML = \`
         <h3 style="margin-top:0;">Enter Prompt</h3>
-        <textarea id="promptInput" style="width:100%;margin:10px 0;padding:8px;min-height:60px;">summarize the page in no more than 5 sentences</textarea>
+        <textarea id="promptInput" style="width:100%;margin:10px 0;padding:8px;min-height:60px;">
+        1. summarize the page in no more than 4 sentences
+        2. What if anything seems untrustworthy about this source? Be concise.
+        3. What questions need to be answered to complete the story? Be concise.
+        4. What are some jokes I can make about this later in mixed company?
+        </textarea>
         <div style="text-align:right;">
           <button id="submitPrompt" style="margin-right:8px;padding:6px 12px;">Submit</button>
           <button id="cancelPrompt" style="padding:6px 12px;">Cancel</button>
